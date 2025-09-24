@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/mocha.css";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+
+  --color-primary: var(--catppuccin-color-mauve-950);
+  --color-secondary: var(--catppuccin-color-overlay1);
+}
+
+.nav-fixed {
+  @apply fixed z-999 backdrop-blur-3xl backdrop-brightness-200 shadow-xs;
+}
+
+.is-active span:nth-child(1) {
+  @apply top-1/2 -translate-y-1/2 rotate-45;
+}
+
+.is-active span:nth-child(2) {
+  @apply scale-0 opacity-0;
+}
+
+.is-active span:nth-child(3) {
+  @apply bottom-1/2 translate-y-1/2 -rotate-45;
+}
+
+.show {
+  @apply scale-100 opacity-100;
+}

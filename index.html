@@ -1,277 +1,714 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="src/output.css">
-  <title>Evan | Web Developer</title>
-</head>
-<body class="font-inter">
-  <!-- Header start -->
-  <header id="header" class="flex justify-center">
-    <nav id="header-nav" class="absolute w-full flex justify-center">
-      <div class="relative px-10 py-3 flex w-full justify-between items-center max-w-6xl">
-        <div>
-          <span class="text-primary font-bold text-lg">evanmy</span>
-        </div>
-        <div id="nav-menu" class="scale-0 opacity-0 z-1 w-50 absolute right-10 top-15 p-5 bg-white border border-secondary/10 shadow rounded-md transition-all duration-200 ease-in-out origin-top-right lg:scale-100 lg:opacity-100 lg:top-1/2 lg:-translate-y-1/2 lg:w-fit lg:bg-transparent lg:p-0 lg:shadow-none lg:border-none">
-          <ul class="flex flex-col gap-3 text-[0.95em] text-ctp-surface2 lg:flex-row lg:gap-10">
-            <li><a href="#hero" class="hover:text-primary">Home</a></li>
-            <li><a href="#about-me" class="hover:text-primary">About me</a></li>
-            <li><a href="#portfolio" class="hover:text-primary">Portfolio</a></li>
-            <li><a href="#partnerships" class="hover:text-primary">Partnerships</a></li>
-            <li><a href="#blog" class="hover:text-primary">Blog</a></li>
-            <li><a href="#contact" class="hover:text-primary">Contact</a></li>
-          </ul>
-        </div>
-        <div id="hamburger-menu" class="relative w-7 h-5 flex flex-col justify-between cursor-pointer lg:scale-0 transition-all duration-200 ease-in-out">
-          <span class="absolute block w-full h-[0.2rem] bg-secondary rounded-full top-0 origin-center transition-all duration-200 ease-in-out"></span>
-          <span class="absolute block w-full h-[0.2rem] bg-secondary rounded-full top-1/2 -translate-y-1/2 origin-center transition-all duration-200 ease-in-out"></span>
-          <span class="absolute block w-full h-[0.2rem] bg-secondary rounded-full bottom-0 origin-center transition-all duration-200 ease-in-out"></span>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Header end -->
-
-  <!-- Hero section start -->
-  <section id="hero" class="flex justify-center mt-10 md:mt-0">
-    <div class="flex items-center flex-col px-10 pt-20 max-w-6xl md:flex-row">
-      <div>
-        <p class="font-semibold text-primary">Hi everyone 👋, I'm</p>
-        <h1 class="font-bold text-2xl">M. Evan Maulana Yafi</h1>
-        <p class="font-medium"><span class="text-secondary">Programmer &</span> Tech Enthusiast</p>
-        <p class="text-secondary my-5">I find joy in the logic and creativity of programming. I'm a lifelong learner, constantly diving into new technologies and sharing the excitement of innovation.</p>
-        <a href="https://wa.me/82139244432" target="_blank" class="block w-fit px-4 py-2 rounded-full bg-primary text-sm text-slate-50 hover:bg-primary/95 hover:text-slate-100">Contact Me</a>
-      </div>
-      <div class="relative overflow-hidden h-100 w-full">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-md absolute -top-10 left-1/2 -translate-x-1/2 fill-primary md:w-md md:-top-5 lg:w-lg lg:-top-8">
-          <path d="M37.8,-60.1C47.3,-59.9,52.4,-46.5,55.5,-34.3C58.7,-22.1,59.9,-11,55.3,-2.7C50.6,5.6,40,11.3,36.7,23.2C33.3,35.2,37.4,53.4,32.5,55.4C27.6,57.4,13.8,43.2,-0.6,44.1C-14.9,45.1,-29.8,61.3,-40.4,62.6C-50.9,63.9,-57.1,50.2,-53.8,37.3C-50.5,24.3,-37.8,12.2,-32.7,2.9C-27.7,-6.3,-30.2,-12.6,-30.4,-20.2C-30.6,-27.8,-28.4,-36.6,-23,-39.2C-17.5,-41.8,-8.7,-38.2,2.7,-42.8C14.1,-47.5,28.2,-60.4,37.8,-60.1Z" transform="translate(100 100)" />
-        </svg>
-        <img src="src/assets/images/photo.jpeg" alt="Evan Photo" class="absolute left-1/2 -top-18 translate-y-1/2 -translate-x-1/2 max-w-65 rounded-full md:max-w-60 md:-top-7 lg:max-w-70 lg:-top-15">
-      </div>
-    </div>
-  </section>
-  <!-- Hero section end -->
-
-  <!-- About section start -->
-  <section id="about-me" class="flex justify-center">
-    <div class="px-10 py-20 max-w-6xl lg:flex lg:gap-16">
-      <div class="lg:max-w-1/2">
-        <h2 class="uppercase text-primary font-bold">about me</h2>
-        <p class="font-semibold text-2xl my-2">I'm a programmer and tech enthusiast</p>
-        <p class="text-secondary">passionate about building clean, efficient digital solutions. With a focus on web development, I love turning complex problems into functional code. I'm always exploring new technologies and am eager to connect and collaborate on interesting projects.</p>
-      </div>
-      <div class="mt-7 lg:mt-[2.25rem]">
-        <p class="mb-3 text-xl font-medium">Let's connect</p>
-        <p class="text-secondary">I'm always open to networking and discussing new opportunities, ideas, or just sharing insights about the world of programming and technology.</p>
-        <div class="flex gap-2 mt-3">
-          <a href="https://www.instagram.com/evann_my/" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-primary/70 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-primary/80 transition-all ease-in-out duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-          </a>
-          <a href="https://youtube.com/@evanmy" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-primary/70 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-primary/80 transition-all ease-in-out duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/evan-my/" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-primary/70 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-primary/80 transition-all ease-in-out duration-200" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-            </svg>
-          </a>
-          <a href="https://github.com/evannmy" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-primary/70 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-primary/80 transition-all ease-in-out duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About section end -->
-
-  <!-- Portfolio section start -->
-  <section id="portfolio" class="flex justify-center bg-primary/10">
-      <div class="px-10 py-20 max-w-6xl text-center">
-        <div class="flex flex-col gap-2 justify-center items-center">
-          <h2 class="text-primary font-bold">Portfolio</h2>
-          <p class="font-semibold text-2xl">Latest Project</p>
-          <p class="text-secondary max-w-xl">Welcome to my projects! This is where I turn ideas into reality. Feel free to browse through my work and see what I've been building.</p>
-          <div class="mt-10 flex flex-col justify-center items-center gap-10 md:flex-row md:flex-wrap">
-            <div class="text-left max-w-md md:w-[47%] md:gap-0">
-              <img src="src/assets/images/projects/project-1.jpg" alt="project-1" class="w-full h-60 object-cover object-top bg-primary/30 rounded-sm border-0.5 border-secondary shadow-sm">
-              <div class="md:h-45 lg:h-35 overflow-y-hidden">
-                <a class="block my-2 text-lg font-medium hover:underline" href="https://evannmy.github.io/my-reminder/" target="_blank">Islamic Center Website</a>
-                <p class="text-secondary">A static website offering Islamic articles, daily prayers, and a zakat calculator. It's designed to be a simple, reliable digital resource for the community.</p>
-              </div>
-            </div>
-            <div class="text-left max-w-md md:w-[47%] md:gap-0">
-              <img src="src/assets/images/projects/project-2.jpg" alt="project-2" class="w-full h-60 object-cover object-top bg-primary/30 rounded-sm border-0.5 border-secondary shadow-sm">
-              <div class="md:h-45 lg:h-35 overflow-y-hidden">
-                <a class="block my-2 text-lg font-medium hover:underline" href="https://github.com/evannmy/dispensasi-nikah-website" target="_blank">Marriage Dispensation Submission System</a>
-                <p class="text-secondary">A web application that automates marriage dispensation requests for the Porong Sub-district Office, improving administrative efficiency.</p>
-              </div>
-            </div>
-            <div class="text-left max-w-md md:w-[47%] md:gap-0">
-              <img src="src/assets/images/projects/project-3.jpg" alt="project-3" class="w-full h-60 object-cover object-top bg-primary/30 rounded-sm border-0.5 border-secondary shadow-sm">
-              <div class="md:h-45 lg:h-35 overflow-y-hidden">
-                <a class="block my-2 text-lg font-medium hover:underline" href="https://github.com/evannmy/simple-movie-search-app" target="_blank">Movie API Explorer</a>
-                <p class="text-secondary">A project that uses API integration to create a dynamic, user-friendly tool for searching and exploring movies.</p>
-              </div>
-            </div>
-            <div class="text-left max-w-md md:w-[47%] md:gap-0">
-              <img src="src/assets/images/projects/project-4.jpg" alt="project-4" class="w-full h-60 object-cover object-top bg-primary/30 rounded-sm border-0.5 border-secondary shadow-sm">
-              <div class="md:h-45 lg:h-35 overflow-y-hidden">
-                <a class="block my-2 text-lg font-medium hover:underline" href="https://github.com/evannmy/laravel-8-blog-app" target="_blank">Personal Blog Platform</a>
-                <p class="text-secondary">A full-stack blog platform allowing users to create and manage their own blogs, while also exploring posts from others through a searchable, categorized feed.<p>
-              </div>
-            </div>
+<!doctype html>
+<html lang="en" class="mocha scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/final.css" />
+    <title>Evan | Web Developer</title>
+    <script>
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark",
+      );
+    </script>
+  </head>
+  <body class="font-inter dark:bg-dark">
+    <!-- Header start -->
+    <header id="header" class="flex justify-center">
+      <nav id="header-nav" class="absolute flex w-full justify-center">
+        <div
+          class="relative flex w-full max-w-6xl items-center justify-between px-10 py-3"
+        >
+          <div>
+            <span class="text-primary dark:text-primary-dark text-lg font-bold"
+              >evanmy</span
+            >
+          </div>
+          <div
+            id="nav-menu"
+            class="border-secondary/10 dark:border-secondary-dark/10 dark:bg-dark dark:shadow-secondary-dark/5 absolute top-15 right-10 z-1 w-50 origin-top-right scale-0 rounded-md border bg-white p-5 opacity-0 shadow transition-transform duration-200 ease-in-out lg:top-1/2 lg:w-fit lg:-translate-y-1/2 lg:scale-100 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:lg:border-none dark:lg:bg-transparent dark:lg:shadow-none"
+          >
+            <ul
+              class="text-ctp-surface2 dark:text-ctp-subtext1 flex flex-col gap-3 text-[0.95em] lg:flex-row lg:items-center lg:gap-10"
+            >
+              <li class="self-end lg:order-2 lg:ml-5 lg:self-center">
+                <label
+                  for="toggle-dark-mode"
+                  class="bg-secondary relative flex h-5 w-10 cursor-pointer items-center overflow-hidden rounded-full"
+                >
+                  <input id="toggle-dark-mode" type="checkbox" class="hidden" />
+                  <div
+                    class="absolute left-0 mx-0.5 h-4 w-4 rounded-full bg-white p-0.5"
+                  >
+                    <img
+                      src="src/assets/icons/light-mode.svg"
+                      alt="light-mode"
+                    />
+                  </div>
+                </label>
+              </li>
+              <li><a href="#hero" class="hover:text-primary">Home</a></li>
+              <li>
+                <a href="#about-me" class="hover:text-primary">About me</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="hover:text-primary">Portfolio</a>
+              </li>
+              <li>
+                <a href="#partnerships" class="hover:text-primary"
+                  >Partnerships</a
+                >
+              </li>
+              <li><a href="#blog" class="hover:text-primary">Blog</a></li>
+              <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+            </ul>
+          </div>
+          <div
+            id="hamburger-menu"
+            class="relative flex h-5 w-7 cursor-pointer flex-col justify-between transition-all duration-200 ease-in-out lg:scale-0"
+          >
+            <span
+              class="bg-secondary dark:bg-secondary-dark absolute top-0 block h-[0.2rem] w-full origin-center rounded-full transition-all duration-200 ease-in-out"
+            ></span>
+            <span
+              class="bg-secondary dark:bg-secondary-dark absolute top-1/2 block h-[0.2rem] w-full origin-center -translate-y-1/2 rounded-full transition-all duration-200 ease-in-out"
+            ></span>
+            <span
+              class="bg-secondary dark:bg-secondary-dark absolute bottom-0 block h-[0.2rem] w-full origin-center rounded-full transition-all duration-200 ease-in-out"
+            ></span>
           </div>
         </div>
-      </div>
-  </section>
-  <!-- Portfolio section end -->
+      </nav>
+    </header>
+    <!-- Header end -->
 
-  <!-- Partnership section start -->
-  <section id="partnerships" class="flex justify-center bg-ctp-surface2">
-      <div class="px-10 py-20 w-full max-w-6xl flex flex-col items-center justify-center text-center">
+    <!-- Hero section start -->
+    <section id="hero" class="mt-10 flex justify-center md:mt-0">
+      <div class="flex max-w-6xl flex-col items-center px-10 pt-20 md:flex-row">
         <div>
-          <h2 class="text-ctp-mauve-300 font-bold">Partnerships</h2>
-          <p class="text-white font-semibold text-2xl my-2">Who I've Partnered With</p>
-          <p class="text-ctp-text max-w-xl lg:max-w-2xl">My journey as a developer has introduced me to incredible people and projects. Each partnership is an opportunity to solve a new challenge and create something valuable. These are some of the clients who have trusted me with their vision.</p>
+          <p
+            id="greeting"
+            class="text-primary dark:text-primary-dark font-semibold"
+          >
+            Hi everyone 👋, I'm
+          </p>
+          <h1 class="text-2xl font-bold dark:text-white">
+            M. Evan Maulana Yafi
+          </h1>
+          <p class="font-medium dark:text-white">
+            <span class="text-secondary dark:text-secondary-dark"
+              >Programmer &</span
+            >
+            Tech Enthusiast
+          </p>
+          <p class="text-secondary dark:text-secondary-dark my-5">
+            I find joy in the logic and creativity of programming. I'm a
+            lifelong learner, constantly diving into new technologies and
+            sharing the excitement of innovation.
+          </p>
+          <a
+            href="https://wa.me/82139244432"
+            target="_blank"
+            class="bg-primary dark:bg-primary-dark hover:bg-primary/95 dark:text-ctp-crust dark:hover:bg-ctp-mauve-700 dark:hover:text-ctp-mantle block w-fit rounded-full px-4 py-2 text-sm text-slate-50 hover:text-slate-100"
+            >Contact Me</a
+          >
         </div>
-        <div class="w-full max-w-xs flex justify-center items-center flex-wrap mt-10 gap-x-5 gap-y-9 lg:flex-nowrap lg:max-w-6xl">
-          <div class="w-[30%] flex justify-center lg:w-[10%]">
-            <a href="https://porong.sidoarjokab.go.id" target="_blank">
-              <img src="src/assets/logo/Seal_of_Sidoarjo_Regency.svg" alt="client-1-logo" class="h-10 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all ease-in-out duration-200">
+        <div class="relative h-100 w-full overflow-hidden">
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-primary dark:fill-primary-dark absolute -top-10 left-1/2 w-md -translate-x-1/2 md:-top-5 md:w-md lg:-top-8 lg:w-lg"
+          >
+            <path
+              d="M37.8,-60.1C47.3,-59.9,52.4,-46.5,55.5,-34.3C58.7,-22.1,59.9,-11,55.3,-2.7C50.6,5.6,40,11.3,36.7,23.2C33.3,35.2,37.4,53.4,32.5,55.4C27.6,57.4,13.8,43.2,-0.6,44.1C-14.9,45.1,-29.8,61.3,-40.4,62.6C-50.9,63.9,-57.1,50.2,-53.8,37.3C-50.5,24.3,-37.8,12.2,-32.7,2.9C-27.7,-6.3,-30.2,-12.6,-30.4,-20.2C-30.6,-27.8,-28.4,-36.6,-23,-39.2C-17.5,-41.8,-8.7,-38.2,2.7,-42.8C14.1,-47.5,28.2,-60.4,37.8,-60.1Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <img
+            src="src/assets/images/photo.jpeg"
+            alt="Evan Photo"
+            class="absolute -top-18 left-1/2 max-w-65 -translate-x-1/2 translate-y-1/2 rounded-full md:-top-7 md:max-w-60 lg:-top-15 lg:max-w-70"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section id="about-me" class="flex justify-center">
+      <div class="max-w-6xl px-10 py-20 lg:flex lg:gap-16">
+        <div class="lg:max-w-1/2">
+          <h2 class="text-primary dark:text-primary-dark font-bold uppercase">
+            about me
+          </h2>
+          <p class="my-2 text-2xl font-semibold dark:text-white">
+            I'm a programmer and tech enthusiast
+          </p>
+          <p class="text-secondary dark:text-secondary-dark">
+            passionate about building clean, efficient digital solutions. With a
+            focus on web development, I love turning complex problems into
+            functional code. I'm always exploring new technologies and am eager
+            to connect and collaborate on interesting projects.
+          </p>
+        </div>
+        <div class="mt-7 lg:mt-[2.25rem]">
+          <p class="mb-3 text-xl font-medium dark:text-white">Let's connect</p>
+          <p class="text-secondary dark:text-secondary-dark">
+            I'm always open to networking and discussing new opportunities,
+            ideas, or just sharing insights about the world of programming and
+            technology.
+          </p>
+          <div class="mt-3 flex gap-2">
+            <a
+              href="https://www.instagram.com/evann_my/"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-primary/70 dark:hover:border-primary-dark/70 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-primary/80 dark:group-hover:fill-primary-dark/80 transition-all duration-200 ease-in-out"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@evanmy"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-primary/70 dark:hover:border-primary-dark/70 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-primary/80 dark:group-hover:fill-primary-dark/80 transition-all duration-200 ease-in-out"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/evan-my/"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-primary/70 dark:hover:border-primary-dark/70 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-primary/80 dark:group-hover:fill-primary-dark/80 transition-all duration-200 ease-in-out"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/evannmy"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-primary/70 dark:hover:border-primary-dark/70 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-primary/80 dark:group-hover:fill-primary-dark/80 transition-all duration-200 ease-in-out"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
             </a>
           </div>
         </div>
       </div>
-  </section>
-  <!-- Partnership section end -->
+    </section>
+    <!-- About section end -->
 
-  <!-- Blog section start -->
-  <section id="blog" class="flex justify-center bg-primary/10">
-    <div class="px-10 py-20 w-full max-w-6xl flex flex-col items-center justify-center text-center">
-      <div>
-        <h2 class="text-primary font-bold">Blog</h2>
-        <p class="font-semibold text-2xl my-2">Latest Post</p>
-        <p class="max-w-xl text-secondary">Stay up to date with my latest insights on technology, coding best practices, and project experiences. My blog is where I share my thoughts and lessons learned on my journey as a developer.</p>
-      </div>
-      <div class="text-left mt-10 flex flex-col items-center justify-center gap-10 md:flex-row md:flex-wrap">
-        <div class="overflow-hidden rounded-md bg-white border-0.5 border-secondary shadow-md max-w-sm md:max-w-xs">
-          <img src="src/assets/images/blog/post-1.jpg" alt="post-1-image" class="w-full h-60 object-cover object-center">
-          <div class="p-5">
-            <div class="md:h-50 overflow-y-hidden">
-              <p class="text-lg font-medium">Mastering Responsive Design with Modern CSS</p>
-              <p class="text-secondary my-2 overflow-y-hidden">A step-by-step guide to creating fluid, responsive layouts using modern CSS techniques like Flexbox and Grid, ensuring your site looks great on any device.</p>
+    <!-- Portfolio section start -->
+    <section
+      id="portfolio"
+      class="bg-primary/10 dark:bg-primary-dark/10 flex justify-center"
+    >
+      <div class="max-w-6xl px-10 py-20 text-center">
+        <div class="flex flex-col items-center justify-center gap-2">
+          <h2 class="text-primary dark:text-primary-dark font-bold">
+            Portfolio
+          </h2>
+          <p class="text-2xl font-semibold dark:text-white">Latest Project</p>
+          <p class="text-secondary dark:text-secondary-dark max-w-xl">
+            Welcome to my projects! This is where I turn ideas into reality.
+            Feel free to browse through my work and see what I've been building.
+          </p>
+          <div
+            class="mt-10 flex flex-col items-center justify-center gap-10 md:flex-row md:flex-wrap"
+          >
+            <div class="max-w-md text-left md:w-[47%] md:gap-0">
+              <img
+                src="src/assets/images/projects/project-4.jpg"
+                alt="project-4"
+                class="border-0.5 border-secondary dark:border-secondary-dark dark:shadow-secondary-dark/50 h-60 w-full rounded-sm object-cover object-top shadow-sm"
+              />
+              <div class="overflow-y-hidden md:h-45 lg:h-35">
+                <a
+                  class="my-2 block w-fit text-lg font-medium hover:underline dark:text-white"
+                  href="https://github.com/evannmy/laravel-8-blog-app"
+                  target="_blank"
+                  >Personal Blog Platform</a
+                >
+                <p class="text-secondary dark:text-secondary-dark">
+                  A full-stack blog platform allowing users to create and manage
+                  their own blogs, while also exploring posts from others
+                  through a searchable, categorized feed.
+                </p>
+                <p></p>
+              </div>
             </div>
-            <a href="https://medium.com/@evanmaulanayafi/mastering-responsive-design-with-modern-css-1471d5e034be" target="_blank" class="text-sm underline hover:text-primary">Read more</a>
-          </div>
-        </div>
-        <div class="overflow-hidden rounded-md bg-white border-0.5 border-secondary shadow-md max-w-sm md:max-w-xs">
-          <img src="src/assets/images/blog/post-2.jpg" alt="post-2-image" class="w-full h-60 object-cover object-center">
-          <div class="p-5">
-            <div class="md:h-50 overflow-y-hidden">
-              <p class="text-lg font-medium">My Journey from Passion to Profession: The Story Behind My Code</p>
-              <p class="text-secondary my-2 overflow-y-hidden">I'll share my personal story about falling in love with programming and how that passion turned into a career.</p>
+            <div class="max-w-md text-left md:w-[47%] md:gap-0">
+              <img
+                src="src/assets/images/projects/project-2.jpg"
+                alt="project-2"
+                class="border-0.5 border-secondary dark:border-secondary-dark dark:shadow-secondary-dark/50 h-60 w-full rounded-sm object-cover object-top shadow-sm"
+              />
+              <div class="overflow-y-hidden md:h-45 lg:h-35">
+                <a
+                  class="my-2 block w-fit text-lg font-medium hover:underline dark:text-white"
+                  href="https://github.com/evannmy/dispensasi-nikah-website"
+                  target="_blank"
+                  >Marriage Dispensation Submission System</a
+                >
+                <p class="text-secondary dark:text-secondary-dark">
+                  A web application that automates marriage dispensation
+                  requests for the Porong Sub-district Office, improving
+                  administrative efficiency.
+                </p>
+              </div>
             </div>
-            <a href="https://medium.com/@evanmaulanayafi/my-journey-from-passion-to-profession-the-story-behind-my-code-b571c3db8678" target="_blank" class="text-sm underline hover:text-primary">Read more</a>
-          </div>
-        </div>
-        <div class="overflow-hidden rounded-md bg-white border-0.5 border-secondary shadow-md max-w-sm md:max-w-xs">
-          <img src="src/assets/images/blog/post-3.jpg" alt="post-3-image" class="w-full h-60 object-cover object-center">
-          <div class="p-5">
-            <div class="md:h-50 overflow-y-hidden">
-              <p class="text-lg font-medium">Optimizing Website Performance: 5 Simple Tips to Make Your Site Blazing Fast</p>
-              <p class="text-secondary my-2 overflow-y-hidden">Improve your site's speed and user experience with these essential tips, from image compression to lazy loading.</p>
+            <div class="max-w-md text-left md:w-[47%] md:gap-0">
+              <img
+                src="src/assets/images/projects/project-3.jpg"
+                alt="project-3"
+                class="border-0.5 border-secondary dark:border-secondary-dark dark:shadow-secondary-dark/50 h-60 w-full rounded-sm object-cover object-top shadow-sm"
+              />
+              <div class="overflow-y-hidden md:h-45 lg:h-35">
+                <a
+                  class="my-2 block w-fit text-lg font-medium hover:underline dark:text-white"
+                  href="https://github.com/evannmy/simple-movie-search-app"
+                  target="_blank"
+                  >Movie API Explorer</a
+                >
+                <p class="text-secondary dark:text-secondary-dark">
+                  A project that uses API integration to create a dynamic,
+                  user-friendly tool for searching and exploring movies.
+                </p>
+              </div>
             </div>
-            <a href="https://medium.com/@evanmaulanayafi/optimizing-website-performance-5-simple-tips-to-make-your-site-blazing-fast-7290ea93139b" target="_blank" class="text-sm underline hover:text-primary">Read more</a>
+            <div class="max-w-md text-left md:w-[47%] md:gap-0">
+              <img
+                src="src/assets/images/projects/project-1.jpg"
+                alt="project-1"
+                class="border-0.5 border-secondary dark:border-secondary-dark dark:shadow-secondary-dark/50 h-60 w-full rounded-sm object-cover object-top shadow-sm"
+              />
+              <div class="overflow-y-hidden md:h-45 lg:h-35">
+                <a
+                  class="my-2 block w-fit text-lg font-medium hover:underline dark:text-white"
+                  href="https://evannmy.github.io/my-reminder/"
+                  target="_blank"
+                  >Islamic Center Website</a
+                >
+                <p class="text-secondary dark:text-secondary-dark">
+                  A static website offering Islamic articles, daily prayers, and
+                  a zakat calculator. It's designed to be a simple, reliable
+                  digital resource for the community.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Blog section end -->
+    </section>
+    <!-- Portfolio section end -->
 
-  <!-- Contact section start -->
-  <section id="contact" class="flex justify-center">
-    <div class="px-10 py-20 w-full max-w-6xl flex flex-col items-center justify-center text-center">
-      <div>
-        <h2 class="text-primary font-bold">Contact</h2>
-        <p class="font-semibold text-2xl my-2">Get in Touch</p>
-        <p class="max-w-xl lg:max-w-2xl text-secondary">Got a project idea, a question, or just want to say hello? I'd love to hear from you. Feel free to reach out using the form below, and I'll get back to you as soon as possible.</p>
+    <!-- Partnership section start -->
+    <section
+      id="partnerships"
+      class="bg-ctp-surface2 dark:bg-ctp-surface1 flex justify-center"
+    >
+      <div
+        class="flex w-full max-w-6xl flex-col items-center justify-center px-10 py-20 text-center"
+      >
+        <div>
+          <h2 class="text-ctp-mauve-300 dark:text-primary-dark font-bold">
+            Partnerships
+          </h2>
+          <p class="my-2 text-2xl font-semibold text-white">
+            Who I've Partnered With
+          </p>
+          <p class="text-ctp-text max-w-xl lg:max-w-2xl">
+            My journey as a developer has introduced me to incredible people and
+            projects. Each partnership is an opportunity to solve a new
+            challenge and create something valuable. These are some of the
+            clients who have trusted me with their vision.
+          </p>
+        </div>
+        <div
+          class="mt-10 flex w-full max-w-xs flex-wrap items-center justify-center gap-x-5 gap-y-9 lg:max-w-6xl lg:flex-nowrap"
+        >
+          <div class="flex w-[30%] justify-center lg:w-[10%]">
+            <a href="https://porong.sidoarjokab.go.id" target="_blank">
+              <img
+                src="src/assets/logo/Seal_of_Sidoarjo_Regency.svg"
+                alt="client-1-logo"
+                class="h-10 opacity-80 grayscale transition-all duration-200 ease-in-out hover:opacity-100 hover:grayscale-0"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="w-full mt-10 text-left max-w-lg">
-        <form class="flex flex-col gap-5" action="">
-          <div>
-            <label for="name" class="text-ctp-surface1">Name</label>
-            <input class="w-full h-9 rounded-sm mt-1 p-2 text-sm text-ctp-surface2 border border-ctp-base/50 focus:outline focus:outline-primary focus:border-primary" type="text" id="name" required>
-          </div>
-          <div>
-            <label for="email" class="text-ctp-surface1">Email</label>
-            <input class="w-full h-9 rounded-sm mt-1 p-2 text-sm text-ctp-surface2 border border-ctp-base/50 focus:outline focus:outline-primary focus:border-primary" type="email" id="email" required>
-          </div>
-          <div>
-            <label for="message" class="text-ctp-surface1">Message</label>
-            <textarea name="" rows="3" id="message" class="w-full rounded-sm mt-1 p-2 text-sm text-ctp-surface2 border border-ctp-base/50 focus:outline focus:outline-primary focus:border-primary" required></textarea>
-          </div>
-          <button disabled type="submit" class="w-full cursor-pointer bg-primary text-slate-50 rounded-sm py-1.5 hover:bg-primary/95 hover:text-slate-100">Send</button>
-        </form>
-      </div>
-    </div>
-  </section>
-  <!-- Contact section end -->
+    </section>
+    <!-- Partnership section end -->
 
-  <!-- Footer section start -->
-  <footer class="flex justify-center bg-ctp-base">
-    <div class="px-10 py-15 w-full max-w-6xl flex flex-col items-center justify-center gap-10 text-ctp-text">
-      <div class="w-full md:text-center">
-        <p class="text-2xl font-semibold">M. Evan Maulana Yafi</p>
-      </div>
-      <div class="w-full flex flex-col gap-10 md:flex-row justify-between md:max-w-3xl">
-        <div class="flex flex-col gap-2 md:items-center md:gap-4">
-          <p class="text-xl font-medium">Send Me a Message</p>
-          <p class="text-secondary">evanmaulanayafi@gmail.com</p>
+    <!-- Blog section start -->
+    <section
+      id="blog"
+      class="bg-primary/10 dark:bg-primary-dark/10 flex justify-center"
+    >
+      <div
+        class="flex w-full max-w-6xl flex-col items-center justify-center px-10 py-20 text-center"
+      >
+        <div>
+          <h2 class="text-primary dark:text-primary-dark font-bold">Blog</h2>
+          <p class="my-2 text-2xl font-semibold dark:text-white">Latest Post</p>
+          <p class="text-secondary dark:text-secondary-dark max-w-xl">
+            Stay up to date with my latest insights on technology, coding best
+            practices, and project experiences. My blog is where I share my
+            thoughts and lessons learned on my journey as a developer.
+          </p>
         </div>
-        <div class="flex flex-col gap-2 md:items-center md:gap-4">
-          <p class="text-xl font-medium">Link</p>
-          <nav>
-            <ul class="text-secondary md:w-full md:flex md:flex-wrap md:justify-center gap-y-3">
-              <li class="md:w-[33%] md:text-left"><a href="#hero" class="hover:text-ctp-subtext0">Home</a></li>
-              <li class="md:w-[33%] md:text-center"><a href="#about-me" class="hover:text-ctp-subtext0">About me</a></li>
-              <li class="md:w-[33%] md:text-right"><a href="#portfolio" class="hover:text-ctp-subtext0">Portfolio</a></li>
-              <li class="md:w-[33%] md:text-left"><a href="#partnerships" class="hover:text-ctp-subtext0">Partnerships</a></li>
-              <li class="md:w-[33%] md:text-center"><a href="#blog" class="hover:text-ctp-subtext0">Blog</a></li>
-              <li class="md:w-[33%] md:text-right"><a href="#contact" class="hover:text-ctp-subtext0">Contact</a></li>
-            </ul>
-          </nav>
+        <div
+          class="mt-10 flex flex-col items-center justify-center gap-10 text-left md:flex-row md:flex-wrap"
+        >
+          <div
+            class="border-0.5 border-secondary dark:border-secondary-dark dark:shadow-secondary-dark/5 dark:bg-dark max-w-sm overflow-hidden rounded-md bg-white shadow-md md:max-w-xs"
+          >
+            <img
+              src="src/assets/images/blog/post-1.jpg"
+              alt="post-1-image"
+              class="h-60 w-full object-cover object-center"
+            />
+            <div class="p-5">
+              <div class="overflow-y-hidden md:h-50">
+                <p class="text-lg font-medium dark:text-white">
+                  Mastering Responsive Design with Modern CSS
+                </p>
+                <p
+                  class="text-secondary dark:text-secondary-dark my-2 overflow-y-hidden"
+                >
+                  A step-by-step guide to creating fluid, responsive layouts
+                  using modern CSS techniques like Flexbox and Grid, ensuring
+                  your site looks great on any device.
+                </p>
+              </div>
+              <a
+                href="https://medium.com/@evanmaulanayafi/mastering-responsive-design-with-modern-css-1471d5e034be"
+                target="_blank"
+                class="hover:text-primary dark:hover:text-primary-dark text-sm underline dark:text-white"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div
+            class="border-0.5 border-secondary dark:border-secondary-dark dark:shadow-secondary-dark/5 dark:bg-dark max-w-sm overflow-hidden rounded-md bg-white shadow-md md:max-w-xs"
+          >
+            <img
+              src="src/assets/images/blog/post-2.jpg"
+              alt="post-2-image"
+              class="h-60 w-full object-cover object-center"
+            />
+            <div class="p-5">
+              <div class="overflow-y-hidden md:h-50">
+                <p class="text-lg font-medium dark:text-white">
+                  My Journey from Passion to Profession: The Story Behind My
+                  Code
+                </p>
+                <p
+                  class="text-secondary dark:text-secondary-dark my-2 overflow-y-hidden"
+                >
+                  I'll share my personal story about falling in love with
+                  programming and how that passion turned into a career.
+                </p>
+              </div>
+              <a
+                href="https://medium.com/@evanmaulanayafi/my-journey-from-passion-to-profession-the-story-behind-my-code-b571c3db8678"
+                target="_blank"
+                class="hover:text-primary dark:hover:text-primary-dark text-sm underline dark:text-white"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div
+            class="border-0.5 border-secondary dark:border-secondary-dark dark:shadow-secondary-dark/5 dark:bg-dark max-w-sm overflow-hidden rounded-md bg-white shadow-md md:max-w-xs"
+          >
+            <img
+              src="src/assets/images/blog/post-3.jpg"
+              alt="post-3-image"
+              class="h-60 w-full object-cover object-center"
+            />
+            <div class="p-5">
+              <div class="overflow-y-hidden md:h-50">
+                <p class="text-lg font-medium dark:text-white">
+                  Optimizing Website Performance: 5 Simple Tips to Make Your
+                  Site Blazing Fast
+                </p>
+                <p
+                  class="text-secondary dark:text-secondary-dark my-2 overflow-y-hidden"
+                >
+                  Improve your site's speed and user experience with these
+                  essential tips, from image compression to lazy loading.
+                </p>
+              </div>
+              <a
+                href="https://medium.com/@evanmaulanayafi/optimizing-website-performance-5-simple-tips-to-make-your-site-blazing-fast-7290ea93139b"
+                target="_blank"
+                class="hover:text-primary dark:hover:text-primary-dark text-sm underline dark:text-white"
+                >Read more</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-      <div class="w-full flex flex-col items-center gap-5">
-        <hr class="w-full border-ctp-surface1">
-        <div class="flex gap-3">
-          <a href="https://www.instagram.com/evann_my/" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-ctp-subtext0 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-ctp-subtext0 transition-all ease-in-out duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-          </a>
-          <a href="https://youtube.com/@evanmy" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-ctp-subtext0 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-ctp-subtext0 transition-all ease-in-out duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/evan-my/" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-ctp-subtext0 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-ctp-subtext0 transition-all ease-in-out duration-200" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-            </svg>
-          </a>
-          <a href="https://github.com/evannmy" target="_blank" class="group rounded-full border-2 border-secondary/50 p-1.5 w-8 h-8 hover:border-ctp-subtext0 transition-all ease-in-out duration-200">
-            <svg class="fill-secondary/50 group-hover:fill-ctp-subtext0 transition-all ease-in-out duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-        </div>
-        <p class="text-sm text-secondary">Built with ❤️ by <span class="text-primary font-bold">Evan</span></p>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer section end -->
+    </section>
+    <!-- Blog section end -->
 
-<script src="src/script.js"></script>
-</body>
+    <!-- Contact section start -->
+    <section id="contact" class="flex justify-center">
+      <div
+        class="flex w-full max-w-6xl flex-col items-center justify-center px-10 py-20 text-center"
+      >
+        <div>
+          <h2 class="text-primary dark:text-primary-dark font-bold">Contact</h2>
+          <p class="my-2 text-2xl font-semibold dark:text-white">
+            Get in Touch
+          </p>
+          <p
+            class="text-secondary dark:text-secondary-dark max-w-xl lg:max-w-2xl"
+          >
+            Got a project idea, a question, or just want to say hello? I'd love
+            to hear from you. Feel free to reach out using the form below, and
+            I'll get back to you as soon as possible.
+          </p>
+        </div>
+        <div class="mt-10 w-full max-w-lg text-left">
+          <form class="flex flex-col gap-5" action="">
+            <div>
+              <label for="name" class="text-ctp-surface1 dark:text-ctp-subtext1"
+                >Name</label
+              >
+              <input
+                class="text-ctp-surface2 dark:text-ctp-subtext0 border-ctp-base/50 dark:border-secondary-dark/50 focus:outline-primary dark:focus:outline-primary-dark dark:focus:border-primary-dark focus:border-primary mt-1 h-9 w-full rounded-sm border p-2 text-sm focus:outline"
+                type="text"
+                id="name"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="text-ctp-surface1 dark:text-ctp-subtext1"
+                >Email</label
+              >
+              <input
+                class="text-ctp-surface2 dark:text-ctp-subtext0 border-ctp-base/50 dark:border-secondary-dark/50 focus:outline-primary dark:focus:outline-primary-dark dark:focus:border-primary-dark focus:border-primary mt-1 h-9 w-full rounded-sm border p-2 text-sm focus:outline"
+                type="email"
+                id="email"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="message"
+                class="text-ctp-surface1 dark:text-ctp-subtext1"
+                >Message</label
+              >
+              <textarea
+                name=""
+                rows="3"
+                id="message"
+                class="text-ctp-surface2 dark:text-ctp-subtext0 border-ctp-base/50 dark:border-secondary-dark/50 focus:outline-primary dark:focus:outline-primary-dark dark:focus:border-primary-dark focus:border-primary mt-1 w-full rounded-sm border p-2 text-sm focus:outline"
+                required
+              ></textarea>
+            </div>
+            <button
+              disabled
+              type="submit"
+              class="bg-primary dark:bg-primary-dark dark:text-ctp-crust dark:hover:bg-ctp-mauve-700 dark:hover:text-ctp-mantle hover:bg-primary/95 w-full cursor-pointer rounded-sm py-1.5 text-slate-50 hover:text-slate-100"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section start -->
+    <footer class="bg-ctp-base dark:bg-ctp-surface2 flex justify-center">
+      <div
+        class="text-ctp-text flex w-full max-w-6xl flex-col items-center justify-center gap-10 px-10 py-15 dark:text-white"
+      >
+        <div class="w-full md:text-center">
+          <p class="text-2xl font-semibold">M. Evan Maulana Yafi</p>
+        </div>
+        <div
+          class="flex w-full flex-col justify-between gap-10 md:max-w-3xl md:flex-row"
+        >
+          <div class="flex flex-col gap-2 md:items-center md:gap-4">
+            <p class="text-xl font-medium">Send Me a Message</p>
+            <p class="text-secondary dark:text-secondary-dark">
+              evanmaulanayafi@gmail.com
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 md:items-center md:gap-4">
+            <p class="text-xl font-medium">Link</p>
+            <nav>
+              <ul
+                class="text-secondary dark:text-secondary-dark gap-y-3 md:flex md:w-full md:flex-wrap md:justify-center"
+              >
+                <li class="md:w-[33%] md:text-left">
+                  <a href="#hero" class="hover:text-ctp-subtext0">Home</a>
+                </li>
+                <li class="md:w-[33%] md:text-center">
+                  <a href="#about-me" class="hover:text-ctp-subtext0"
+                    >About me</a
+                  >
+                </li>
+                <li class="md:w-[33%] md:text-right">
+                  <a href="#portfolio" class="hover:text-ctp-subtext0"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="md:w-[33%] md:text-left">
+                  <a href="#partnerships" class="hover:text-ctp-subtext0"
+                    >Partnerships</a
+                  >
+                </li>
+                <li class="md:w-[33%] md:text-center">
+                  <a href="#blog" class="hover:text-ctp-subtext0">Blog</a>
+                </li>
+                <li class="md:w-[33%] md:text-right">
+                  <a href="#contact" class="hover:text-ctp-subtext0">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="flex w-full flex-col items-center gap-5">
+          <hr class="border-ctp-surface1 dark:border-secondary-dark w-full" />
+          <div class="flex gap-3">
+            <a
+              href="https://www.instagram.com/evann_my/"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-ctp-subtext0 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out dark:hover:border-white"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-ctp-subtext0 transition-all duration-200 ease-in-out dark:group-hover:fill-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@evanmy"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-ctp-subtext0 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out dark:hover:border-white"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-ctp-subtext0 transition-all duration-200 ease-in-out dark:group-hover:fill-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/evan-my/"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-ctp-subtext0 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out dark:hover:border-white"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-ctp-subtext0 transition-all duration-200 ease-in-out dark:group-hover:fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/evannmy"
+              target="_blank"
+              class="group border-secondary/50 dark:border-secondary-dark/50 hover:border-ctp-subtext0 h-8 w-8 rounded-full border-2 p-1.5 transition-all duration-200 ease-in-out dark:hover:border-white"
+            >
+              <svg
+                class="fill-secondary/50 dark:fill-secondary-dark/50 group-hover:fill-ctp-subtext0 transition-all duration-200 ease-in-out dark:group-hover:fill-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="text-secondary dark:text-secondary-dark text-sm">
+            Built with ❤️ by
+            <span class="text-primary dark:text-ctp-mauve-300 font-bold"
+              >Evan</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <!-- To top button element start -->
+    <a
+      id="to-top"
+      href="#hero"
+      class="bg-primary dark:bg-primary-dark fixed right-5 bottom-5 flex h-10 w-10 origin-center scale-0 items-center justify-center rounded-full pt-1 opacity-0 transition-all duration-200 ease-in-out hover:animate-pulse"
+    >
+      <div
+        class="dark:border-t-ctp-crust dark:border-l-ctp-crust h-3 w-3 rotate-45 border-t-2 border-l-2 border-t-white border-l-white"
+      ></div>
+    </a>
+    <!-- To top button element end -->
+
+    <script src="src/script.js"></script>
+  </body>
 </html>

@@ -1,15 +1,20 @@
 @import "tailwindcss";
 @import "@catppuccin/tailwindcss/mocha.css";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-inter: "Inter", sans-serif;
 
   --color-primary: var(--catppuccin-color-mauve-950);
   --color-secondary: var(--catppuccin-color-overlay1);
+
+  --color-primary-dark: var(--catppuccin-color-mauve);
+  --color-secondary-dark: var(--catppuccin-color-text);
+  --color-dark: var(--catppuccin-color-base);
 }
 
 .nav-fixed {
-  @apply fixed z-999 backdrop-blur-3xl backdrop-brightness-200 shadow-xs;
+  @apply dark:bg-dark/70 dark:shadow-secondary-dark/10 fixed z-999 bg-white/70 shadow-xs backdrop-blur-xs;
 }
 
 .is-active span:nth-child(1) {
